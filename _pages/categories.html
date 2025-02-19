@@ -2,11 +2,13 @@
 title: Categories
 description: List Categories
 ---
+<div class="content">
 {% for category in site.categories %}
-<h3><a href="{{ category[0].url }}">{{ category[0] }}</a></h3>
+<h3>{{ category[0] }}</h3>
 <ul>
   {% for post in category[1] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li><a class="button is-link is-inverted" href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 {% endfor %}
+</div>
