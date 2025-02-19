@@ -1,1 +1,46 @@
-title: "W3Craft - Blog"
+# Site settings
+title: "w3craft"
+description: > # this means to ignore newlines until "baseurl:"
+ Напишите потрясающее описание для вашего нового сайта здесь. Вы можете отредактировать это 
+  описание в _config.yml. Оно появится в вашем документе Meta (для
+  Результатов поиска Yandex) и в описании сайта Feed.xml.
+
+github_username: EvilPencil
+
+collections:
+  pages:
+    output: true
+    permalink: ":name"
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:categories/:title"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      
+baseurl: "" # the subpath of your site, e.g. /w3craft
+url: "https://w3craft.ru" # базовое имя хоста и протокол для вашего сайта, например, http://example.com
+copyright: © 2025
+
+plugins:
+  - "jekyll-sitemap"
+  - "jekyll-feed"
+  - "jekyll-seo-tag"

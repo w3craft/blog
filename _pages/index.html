@@ -1,0 +1,9 @@
+---
+title: w3craft
+---
+<h1>{{ "This is Home page" | downcase }}</h1>
+  
+{% assign date = '2025-02-23T07:30:00Z' %}
+
+  <p> - Original date - {{ date }}</p>
+  <p> - With timeago filter - {{ date | timeago }}</p>
