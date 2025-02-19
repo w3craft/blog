@@ -13,7 +13,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: "main"
   - scope:
       path: ""
       type: "authors"
