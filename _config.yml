@@ -1,6 +1,6 @@
 # Site settings
-title: "W3Craft Blog"
-description: Software Development
+title: "Software Development"
+description: W3Craft Blog
 
 collections:
   pages:
