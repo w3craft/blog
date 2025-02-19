@@ -1,7 +1,13 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  {% for item in site.data.nav %}
-  <a class="button is-light" href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
-    {{ item.name }}
-  </a>
-  {% endfor %}
+  <div class="navbar-start">
+    <div class="navbar-item">
+      <div class="buttons">
+        {% for item in site.data.nav %}
+          <a class="button is-light" href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
+            {{ item.name }}
+          </a>
+         {% endfor %}
+      </div>
+    </div>
+  </div>
 </nav>
