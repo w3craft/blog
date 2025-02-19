@@ -3,7 +3,7 @@
     <div class="navbar-item">
       <div class="buttons">
         {% for item in site.data.nav %}
-          <a class="button is-link is-inverted" href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
+          <a class="button is-link is-inverted" href="{{ item.link }}" {% if page.url==item.link %}{% endif %}>
             {{ item.name }}
           </a>
          {% endfor %}
