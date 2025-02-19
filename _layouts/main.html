@@ -7,10 +7,16 @@ layout: default
 <section class="section">
     {% include nav.html %}
 </section>
-<main class="container">
-    {% include menu.html %}
-    {{ content }}
-    {% include aside.html %}
+<main class="section">
+     <div class="container">
+         {% include menu.html %}
+     </div>
+    <div class="container">
+        {{ content }}
+    </div>
+     <div class="container">
+         {% include aside.html %}
+     </div>
 </main>
 <section class="section">
     {% include footer.html %}
