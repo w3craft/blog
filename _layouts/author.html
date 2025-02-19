@@ -1,14 +1,12 @@
 ---
 layout: main
 ---
-<div class="container">
+<div class="content">
 <h1>{{ page.name }}</h1>
 <h2>{{ page.position }}</h2>
 
 {{ content }}
   
-</div>
-<div class="container">
 <h2>Posts</h2>
 <ul>
   {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
