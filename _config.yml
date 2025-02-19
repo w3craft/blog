@@ -1,6 +1,6 @@
 # Site settings
-title: " Software Development"
-description: W3Craft Blog
+title: "W3Craft Blog"
+description: Software Development
 
 collections:
   pages:
@@ -36,6 +36,8 @@ url: "https://blog.w3craft.ru" # базовое имя хоста и прото�
 copyright: © 2025
 
 plugins:
+  - "jekyll-timeago"
+  - "jekyll-paginate"
   - "jekyll-sitemap"
   - "jekyll-feed"
   - "jekyll-seo-tag"

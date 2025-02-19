@@ -3,19 +3,17 @@ title: W3Craft Blog
 ---
 
 <h1>{{ "Latest posts" | downcase }}</h1>
-  
+
 {% assign date = '2025-02-23T07:30:00Z' %}
 
-  <p> - Original date - {{ date }}</p>
-  <p> - With timeago filter - {{ date | timeago }}</p>
+<p> - Original date - {{ date }}</p>
+<p> - With timeago filter - {{ date | timeago }}</p>
 
 <ul>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </li>
   {% endfor %}
 </ul>
-
-
