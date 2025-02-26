@@ -16,54 +16,54 @@
         {{ item.name }}
       </a>
       {% endfor %}
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="/categories"> Catigories</a>
-        <div class="navbar-dropdown is-boxed">
-          {% for category in site.categories %}
-          <a class="navbar-item" href="">{{ category[0] }}</a>
-          <hr class="navbar-divider">
-          {% for post in category[1] %}
-          <a class="navbar-item" href="{{ post.url }}">{{ post.title }}</a>
-          {% endfor %}
-          {% endfor %}
-        </div>
-      </div>
-
-
-
-      <div class="navbar-item">
-        <a class="bd-tw-button button" target="_blank" href="https://github.com/w3craft/blog">
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-          <span>GitHub</span>
-        </a>
-      </div>
-
     </div>
   </div>
+
+  <div class="navbar-item has-dropdown">
+    <a class="navbar-link" href="/categories"> Catigories</a>
+    <div class="navbar-dropdown is-boxed">
+      {% for category in site.categories %}
+      <a class="navbar-item" href="">{{ category[0] }}</a>
+      <hr class="navbar-divider">
+      {% for post in category[1] %}
+      <a class="navbar-item" href="{{ post.url }}">{{ post.title }}</a>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="navbar-item">
+    <a class="bd-tw-button button" target="_blank" href="https://github.com/w3craft/blog">
+      <span class="icon">
+        <i class="fab fa-github"></i>
+      </span>
+      <span>GitHub</span>
+    </a>
+  </div>
+
+
+
 </nav>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
 
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-  // Add a click event on each of them
-  $navbarBurgers.forEach( el => {
-    el.addEventListener('click', () => {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
 
-      // Get the target from the "data-target" attribute
-      const target = el.dataset.target;
-      const $target = document.getElementById(target);
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
 
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      el.classList.toggle('is-active');
-      $target.classList.toggle('is-active');
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
 
+      });
     });
-  });
 
-});
+  });
 </script>
