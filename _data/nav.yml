@@ -1,12 +1,6 @@
-- name: Home
-  link: /
 - name: About
   link: /about
-- name: Articles
-  link: /articles
-- name: Fruits
-  link: /articles/fruits
-- name: Staff
-  link: /staff
 - name: Tags
   link: /tags
+- name: Staff
+  link: /staff

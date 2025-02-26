@@ -15,23 +15,23 @@
       <a class="navbar-item" href="{{ item.link }}">
         {{ item.name }}
       </a>
-      {% endfor %}      
-      
+      {% endfor %}
+
       <div class="navbar-item has-dropdown is-active">
         <a class="navbar-link" href="/categories"> Catigories</a>
         <div class="navbar-dropdown is-boxed">
           {% for category in site.categories %}
           <a class="navbar-item" href="">{{ category[0] }}</a>
           <hr class="navbar-divider">
-            {% for post in category[1] %}
-            <a class="navbar-item" href="{{ post.url }}">{{ post.title }}</a>
-            {% endfor %}
+          {% for post in category[1] %}
+          <a class="navbar-item" href="{{ post.url }}">{{ post.title }}</a>
+          {% endfor %}
           {% endfor %}
         </div>
       </div>
 
 
-    
+
       <div class="navbar-item">
         <a class="bd-tw-button button" target="_blank" href="https://github.com/w3craft/blog">
           <span class="icon">
