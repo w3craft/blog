@@ -18,12 +18,12 @@
       {% endfor %}      
       
       <div class="navbar-item has-dropdown is-active">
-        <a class="navbar-link" href=""> Catigories</a>
+        <a class="navbar-link" href="/categories"> Catigories</a>
         <div class="navbar-dropdown is-boxed">
           {% for category in site.categories %}
           <a class="navbar-item" href="">{{ category[0] }}</a>
           <hr class="navbar-divider">
-            {% for post in category[0] %}
+            {% for post in category[1] %}
             <a class="navbar-item" href="{{ post.url }}">{{ post.title }}</a>
             {% endfor %}
           {% endfor %}
