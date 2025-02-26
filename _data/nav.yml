@@ -1,6 +1,10 @@
 - name: About
   link: /about
-- name: Tags
-  link: /tags
 - name: Staff
   link: /staff
+- name: Tags
+  link: /tags
+- name: Articles
+  link: /articles
+- name: Categories
+  link: /categories
