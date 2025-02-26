@@ -23,7 +23,9 @@
           {% for category in site.categories %}
           <a class="navbar-item" href="">{{ category[0] }}</a>
           <hr class="navbar-divider">
-          <a class="navbar-item" href="">{{ category[0] }}</a>
+            {% for post in category[0] %}
+            <a class="navbar-item" href="{{ post.url }}">{{ post.title }}</a>
+            {% endfor %}
           {% endfor %}
         </div>
       </div>
