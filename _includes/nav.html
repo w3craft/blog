@@ -1,13 +1,47 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-end">
-    <div class="navbar-item">
-      <div class="buttons">
-        {% for item in site.data.nav %}
-          <a class="button is-link is-inverted" href="{{ item.link }}" {% if page.url==item.link %}{% endif %}>
-            {{ item.name }}
-          </a>
-         {% endfor %}
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://blog.w3craft.ru">Blog W3Craft</a>
+    <div class="navbar-burger js-burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+      {% for item in site.data.nav %}
+      <a class="navbar-item" href="{{ item.link }}">
+        {{ item.name }}
+      </a>
+      {% endfor %}      
+      
+      <div class="navbar-item has-dropdown is-active">
+        <a class="navbar-link" href=""> Catigories</a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+          <a class="navbar-item is-selected" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/"> Components </a>
+        </div>
       </div>
+
+
+    
+      <div class="navbar-item">
+        <a class="bd-tw-button button" target="_blank" href="https://github.com/w3craft/blog">
+          <span class="icon">
+            <i class="fas fa-githab"></i>
+          </span>
+          <span>GitHub</span>
+        </a>
+      </div>
+
     </div>
   </div>
 </nav>

@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
-<section class="section">
-    {% include header.html %}
-</section>
-<section class="section">
-    {% include nav.html %}
-</section>
+{% include header.html %}
+
+{% include nav.html %}
+
 <main class="section">
      <div class="container">
          {% include menu.html %}
@@ -18,6 +16,6 @@ layout: default
          {% include aside.html %}
      </div>
 </main>
-<section class="section">
-    {% include footer.html %}
-</section>
+
+{% include footer.html %}
+
