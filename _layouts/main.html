@@ -1,11 +1,23 @@
 ---
 layout: default
 ---
-{% include header.html %}
-{% include nav.html %}
-<main>
-    {% include menu.html %}
-    {{ content }}
-    {% include aside.html %}
+<section class="section">
+    {% include header.html %}
+</section>
+<section class="section">
+    {% include nav.html %}
+</section>
+<main class="section">
+     <div class="container">
+         {% include menu.html %}
+     </div>
+    <div class="container">
+        {{ content }}
+    </div>
+     <div class="container">
+         {% include aside.html %}
+     </div>
 </main>
-{% include footer.html %}
+<section class="section">
+    {% include footer.html %}
+</section>
