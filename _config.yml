@@ -2,9 +2,6 @@ title: "W3Craft Blog"
 description: Software Development
 
 collections:
-  projects:
-    output: true
-    permalink: /:collection/:categories:output_ext
   pages:
     output: true
     permalink: ":name"

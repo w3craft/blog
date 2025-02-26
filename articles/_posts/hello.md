@@ -1,6 +1,7 @@
 ---
-layout: post
+aythor: ted
 title: "Hello World!"
+tags: TAG
 ---
 Hello World!
 

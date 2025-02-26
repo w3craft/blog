@@ -2,6 +2,10 @@
   link: /
 - name: About
   link: /about
+- name: Articles
+  link: /articles
+- name: Fruts
+  link: /fruts
 - name: Staff
   link: /staff
 - name: Tags
