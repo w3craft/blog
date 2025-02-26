@@ -3,12 +3,24 @@ title: Categories
 description: List Categories
 ---
 <div class="content">
-{% for category in site.categories %}
-<h3>{{ category[0] }}</h3>
-<ul>
-  {% for post in category[1] %}
-  <li><a class="button is-link is-inverted" href="{{ post.url }}">{{ post.title }}</a></li>
+  {% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+    <li><a class="button is-link is-inverted" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
   {% endfor %}
-</ul>
-{% endfor %}
+</div>
+
+<div class="content">
+  <h1>{{ page.title }}</h1>
+  <div class="tags">
+    {% assign sortedCategories = page.categories | sort %}
+    {% for category in sortedCategories %}
+        <span class="tag">
+            <a href="/category/{{ category }}">#{{ category }}</a>
+        </span>
+    {% endfor %}
+  </div>
 </div>
