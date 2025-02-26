@@ -16,6 +16,9 @@ layout: main
 
 </article>
 
+  <div class="content">
+  <h1>{{ page.title }}</h1>
+  <div class="tags">
 {% for tag in post.tags %}
   {% assign tag_slug = tag | slugify: "raw" %}
   <a class="tag-link"
@@ -24,8 +27,10 @@ layout: main
     #{{ tag }}
   </a>
 {% endfor %
+      </div>
+  </div>
 
-  <div class="content">
+  <!-- div class="content">
   <h1>{{ page.title }}</h1>
   <div class="tags">
     {% assign sortedTags = page.tags | sort %}
@@ -35,4 +40,4 @@ layout: main
         </span>
     {% endfor %}
   </div>
-  </div>
+</div -->
