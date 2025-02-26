@@ -5,7 +5,7 @@
 - name: Articles
   link: /articles
 - name: Fruits
-  link: /fruits
+  link: /articles/fruits
 - name: Staff
   link: /staff
 - name: Tags
