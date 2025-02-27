@@ -11,7 +11,7 @@
 <div class="navbar-menu" id="navMenu">
   <div class="navbar-start">
     {% for item in site.data.nav %}
-    <a class="navbar-item {% if page.url == item.link %}is-selected is-white{% endif %}" href="{{ item.link }}">
+    <a class="navbar-item {% if page.url == item.link %}is-selected is-info is-light{% endif %}" href="{{ item.link }}">
       {{ item.name }}
     </a>
     {% endfor %}
