@@ -1,6 +1,6 @@
 <div class="navbar-brand">
   <a class="navbar-item" href="https://blog.w3craft.ru">Blog W3Craft</a>
-  <a class="navbar-burger has-dropdown" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+  <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
     <span></span>
     <span></span>
     <span></span>
@@ -10,17 +10,11 @@
 
 <div class="navbar-menu" id="navMenu">
   <div class="navbar-start">
-    <!-- div class="navbar-dropdown is-boxed">
-      <div class="navbar-item">
-        < div class="buttons" -->
-          {% for item in site.data.nav %}
-          <a class="navbar-item" href="{{ item.link }}">
-            {{ item.name }}
-          </a>
-          {% endfor %}
-        <!-- /div>
-      </div>
-    </div -->
+    {% for item in site.data.nav %}
+    <a class="navbar-item" href="{{ item.link }}">
+      {{ item.name }}
+    </a>
+    {% endfor %}
   </div>
   <div class="navbar-end">
     <div class="navbar-item">
