@@ -5,6 +5,7 @@ title: Articles
   {% for post in site.posts %}
     <li>
       <a class="button is-link is-inverted" href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
