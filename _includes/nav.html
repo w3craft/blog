@@ -9,7 +9,6 @@
 </div>
 
 <div class="navbar-menu" id="navMenu">
-
   <div class="navbar-start">
     {% for item in site.data.nav %}
     <a class="navbar-item" href="{{ item.link }}">
@@ -17,18 +16,17 @@
     </a>
     {% endfor %}
   </div>
-
   <div class="navbar-end">
-    <a class="bd-tw-button button" target="_blank" href="https://github.com/w3craft/blog">
-      <span class="icon">
-        <i class="fab fa-github"></i>
-      </span>
-      <span>GitHub</span>
-    </a>
+    <div class="navbar-item">
+      <a class="bd-tw-button button" target="_blank" href="https://github.com/w3craft/blog">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </a>
+    </div>
   </div>
-
 </div>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
