@@ -12,13 +12,14 @@
 
 <div class="navbar-menu" id="navMenu">
   <div class="navbar-start">
-    <div class="buttons">
-    {% for item in site.data.nav %}
-    <a class="button is-link{% if page.url == item.link %}is-selected is-link is-inverted{% endif %}" href="{{ item.link }}">
-      {{ item.name }}
-    </a>
-    {% endfor %}
-    </div>
+    <div class="navbar-item">
+      <div class="buttons">
+        {% for item in site.data.nav %}
+        <a class="button is-link{% if page.url == item.link %}is-selected is-link is-inverted{% endif %}" href="{{ item.link }}">
+          {{ item.name }}
+        </a>
+        {% endfor %}
+      </div>
     </div>
   </div>
   <div class="navbar-end">
