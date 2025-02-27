@@ -1,22 +1,22 @@
 ---
 layout: default
 ---
-{% include header.html %}
-
-{% include nav.html %}
+<header class="hero is-small has-background-info-light has-text-centered">
+    {% include header.html %}
+    {% include nav.html %}
+</header>
 
 <main class="section">
-     <div class="container">
-         {% include menu.html %}
-     </div>
+    <div class="container">
+        {% include menu.html %}
+    </div>
     <div class="container">
         {{ content }}
     </div>
-     
-     <div class="container">
-         {% include aside.html %}
-     </div>
+
+    <div class="container">
+        {% include aside.html %}
+    </div>
 </main>
 
 {% include footer.html %}
-
