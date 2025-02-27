@@ -2,8 +2,9 @@
 title: Articles
 ---
 <ul>
-{% for post in site.posts %}
-  <li><a class="button is-link is-inverted" href="{{ post.url }}">{{ post.title }}</a></li>
+  {% for post in site.posts %}
+    <li>
+      <a class="button is-link is-inverted" href="{{ post.url }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>
-{% endfor %}
