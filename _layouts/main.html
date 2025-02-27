@@ -3,8 +3,12 @@ layout: default
 ---
 <header class="hero is-small has-background-info-light has-text-centered">
     {% include header.html %}
-    {% include nav.html %}
+    
 </header>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    {% include nav.html %}
+</nav>
 
 <main class="section">
     <div class="container">
@@ -19,4 +23,6 @@ layout: default
     </div>
 </main>
 
-{% include footer.html %}
+<footer class="footer has-text-centered">
+    {% include footer.html %}
+</footer>
