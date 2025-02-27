@@ -10,11 +10,17 @@
 
 <div class="navbar-menu" id="navMenu">
   <div class="navbar-start">
-    {% for item in site.data.nav %}
-    <a class="navbar-item" href="{{ item.link }}">
-      {{ item.name }}
-    </a>
-    {% endfor %}
+    <div class="navbar-dropdown is-boxed">
+      <div class="navbar-item">
+        <div class="buttons">
+          {% for item in site.data.nav %}
+          <a class="botton" href="{{ item.link }}">
+            {{ item.name }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
   <div class="navbar-end">
     <div class="navbar-item">
