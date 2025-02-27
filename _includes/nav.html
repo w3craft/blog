@@ -12,7 +12,7 @@
   <div class="navbar-start">
     <div class="buttons">
     {% for item in site.data.nav %}
-    <a class="button is-info is-light {% if page.url == item.link %}is-selected is-info{% endif %}" href="{{ item.link }}">
+    <a class="button is-info is-light is-inverted{% if page.url == item.link %}is-selected is-info{% endif %}" href="{{ item.link }}">
       {{ item.name }}
     </a>
     {% endfor %}
