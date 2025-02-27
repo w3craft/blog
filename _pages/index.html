@@ -5,11 +5,6 @@ description: W3Craft Blog
 <div class="content">
 <h1>{{ "Latest posts" | downcase }}</h1>
 
-{% assign date = '2025-02-23T07:30:00Z' %}
-
-<p> - Original date - {{ date }}</p>
-<p> - With timeago filter - {{ date | timeago }}</p>
-
 <ul>
   {% for post in site.posts %}
   <li>
@@ -19,3 +14,10 @@ description: W3Craft Blog
   {% endfor %}
 </ul>
 </div>
+
+<!-- 
+{% assign date = '2025-02-23T07:30:00Z' %}
+
+<p> - Original date - {{ date }}</p>
+<p> - With timeago filter - {{ date | timeago }}</p 
+-->
